@@ -1,4 +1,4 @@
-import {Facebook,Instagram,Linkedin,Phone,Mail,} from "lucide-react";
+import { Phone, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
@@ -95,23 +95,32 @@ export default function Footer() {
             </h3>
 
             <p className="text-gray-300 mb-6">
-              Connect with us and start your international
+              Connect withnpm run build us and start your international
               career journey today.
             </p>
 
             <div className="flex gap-4">
-              <div className="bg-yellow-400 p-3 rounded-full text-black">
-                <Facebook size={18} />
-              </div>
+  <a
+    href="#"
+    className="bg-yellow-400 text-black px-4 py-2 rounded-lg font-medium hover:bg-yellow-300 transition"
+  >
+    Facebook
+  </a>
 
-              <div className="bg-yellow-400 p-3 rounded-full text-black">
-                <Instagram size={18} />
-              </div>
+  <a
+    href="#"
+    className="bg-yellow-400 text-black px-4 py-2 rounded-lg font-medium hover:bg-yellow-300 transition"
+  >
+    Instagram
+  </a>
 
-              <div className="bg-yellow-400 p-3 rounded-full text-black">
-                <Linkedin size={18} />
-              </div>
-            </div>
+  <a
+    href="#"
+    className="bg-yellow-400 text-black px-4 py-2 rounded-lg font-medium hover:bg-yellow-300 transition"
+  >
+    LinkedIn
+  </a>
+</div>
           </div>
 
         </div>

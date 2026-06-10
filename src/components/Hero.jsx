@@ -1,4 +1,4 @@
-import { Phone, ArrowRight } from "lucide-react";
+import { Phone, ArrowRight, Mail } from "lucide-react";
 import heroImg from "../images/heroimg.jpg";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
@@ -22,7 +22,7 @@ export default function Hero() {
     {
       title: "Global Opportunities",
       description:
-        "Explore rewarding careers across UAE, Saudi Arabia, Australia and beyond.",
+        "Explore rewarding careers across Europe,UAE, Saudi Arabia, Australia and beyond.",
       image:
         "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1200&q=80",
     },
@@ -57,9 +57,7 @@ export default function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mt-8">
-              <Link to="/contact" className="w-full sm:w-auto bg-yellow-400 text-black px-8 py-4 rounded-xl font-bold hover:bg-yellow-300 transition text-center">
-                Apply Now
-              </Link>
+             
 
               <Link
                 to="/about"
@@ -69,17 +67,7 @@ export default function Hero() {
               </Link>
             </div>
 
-            <div className="mt-10 space-y-3">
-              <p className="flex items-center gap-2">
-                <Phone size={18} />
-                +91 99879 56826
-              </p>
-
-              <p className="flex items-center gap-2">
-                <Phone size={18} />
-                +91 88502 16636
-              </p>
-            </div>
+            
           </div>
 
           {/* Right Image */}
@@ -164,6 +152,31 @@ export default function Hero() {
 
         </div>
       </section>
+      <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 mt-8 sm:ml-20">
+  <Link
+    to="/contact"
+    className="w-full sm:w-auto bg-yellow-400 text-black px-8 py-4 rounded-xl font-bold hover:bg-yellow-300 transition text-center"
+  >
+    Apply Now
+  </Link>
+
+  <p className="flex items-center gap-2 text-black text-sm sm:text-base break-all text-center sm:text-left">
+    <Mail size={18} className="text-yellow-400 flex-shrink-0" />
+    crewconnectglobal@gmail.com
+  </p>
+</div>
+
+<div className="mt-8 space-y-3 sm:ml-20">
+  <p className="flex items-center justify-center sm:justify-start gap-2 text-black text-sm sm:text-base">
+    <Phone size={18} className="text-yellow-400 flex-shrink-0" />
+    +91 99879 56826
+  </p>
+
+  <p className="flex items-center justify-center sm:justify-start gap-2 text-black text-sm sm:text-base">
+    <Phone size={18} className="text-yellow-400 flex-shrink-0" />
+    +91 88502 16636
+  </p>
+</div>
       <Footer />
     </>
   );

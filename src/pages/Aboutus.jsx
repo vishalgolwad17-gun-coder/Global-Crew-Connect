@@ -212,7 +212,7 @@ export default function About() {
 
         <div className="overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=1200&q=80"
+            src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=1200&q=80"
             alt="Founder"
             className="h-96 w-full object-cover group-hover:scale-105 transition duration-500"
           />
@@ -220,7 +220,7 @@ export default function About() {
 
         <div className="p-8 text-center">
           <span className="text-yellow-400 font-semibold uppercase text-sm tracking-wider">
-            Founder & Director
+            Founder
           </span>
 
           <h3 className="text-2xl font-bold mt-3">
@@ -261,12 +261,13 @@ export default function About() {
         </div>
       </div>
 
+
       {/* CEO */}
       <div className="group bg-[#102447] rounded-3xl overflow-hidden border border-white/10 hover:border-yellow-400/30 transition">
 
         <div className="overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=1200&q=80"
+            src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=1200&q=80"
             alt="CEO"
             className="h-96 w-full object-cover group-hover:scale-105 transition duration-500"
           />
@@ -274,7 +275,7 @@ export default function About() {
 
         <div className="p-8 text-center">
           <span className="text-yellow-400 font-semibold uppercase text-sm tracking-wider">
-            Chief Executive Officer
+            Co-Founder
           </span>
 
            <h3 className="text-2xl font-bold mt-3">
@@ -316,30 +317,60 @@ export default function About() {
 
       {[
         {
-          flag: "🇸🇦",
-          name: "Saudi Arabia",
-          image:
-            "https://images.unsplash.com/photo-1586724237569-f3d0c1dee8c6?w=1200&q=80",
-        },
-        {
-          flag: "🇦🇪",
-          name: "United Arab Emirates",
-          image:
-            "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&q=80",
-        },
-        {
-          flag: "🏙️",
-          name: "Dubai",
-          image:
-            "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1200&q=80",
-        },
-        {
-          flag: "🇦🇺",
-          name: "Australia",
-          image:
-            "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=1200&q=80",
-        },
-      ].map((country) => (
+flag: "🇧🇪",
+name: "Belgium",
+image:
+"https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?w=1200&q=80",
+},
+{
+flag: "🇷🇴",
+name: "Romania",
+image:
+"https://images.unsplash.com/photo-1566827954254-0c0692424c04?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+},
+{
+flag: "🇩🇰",
+name: "Denmark",
+image:
+"https://images.unsplash.com/photo-1513622118278-bc041b3c13ed?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+},
+{
+flag: "🇩🇪",
+name: "Germany",
+image:
+"https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=1200&q=80",
+},
+{
+flag: "🇸🇦",
+name: "Saudi Arabia",
+image:
+"https://images.unsplash.com/photo-1586724237569-f3d0c1dee8c6?w=1200&q=80",
+},
+{
+flag: "🇦🇪",
+name: "United Arab Emirates",
+image:
+"https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&q=80",
+},
+{
+flag: "🏙️",
+name: "Dubai",
+image:
+"https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1200&q=80",
+},
+{
+flag: "🇦🇺",
+name: "Australia",
+image:
+"https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=1200&q=80",
+},
+{
+flag: "🇧🇬",
+name: "Bulgaria",
+image:
+"https://images.unsplash.com/photo-1555992336-03a23c7b20ee?w=1200&q=80",
+},
+].map((country) => (
         <div
           key={country.name}
           className="bg-white rounded-3xl overflow-hidden shadow-lg hover:-translate-y-2 transition"

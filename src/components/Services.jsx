@@ -11,9 +11,9 @@ const services = [
       "https://images.unsplash.com/photo-1521791136064-7986c2920216",
   },
   {
-    title: "Gulf Country Recruitment",
+    title: "Europe Recruitment Consultancy",
     description:
-      "Specialized recruitment solutions for UAE, Saudi Arabia and Gulf regions.",
+      "Specialized recruitment solutions for Europe, UAE, Saudi Arabia and Gulf regions.",
     image:
       "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab",
   },

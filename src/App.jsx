@@ -1,11 +1,11 @@
 import React from 'react'
 import Hero from './components/Hero'
-import About from './components/About'
+
 import Services from './components/Services'
 import Jobs from './components/Jobs'
 import Countries from './components/Countries'
 import Whychooseus from './components/Whychooseus'
-import Contactus from './components/Countactus'
+import Contactus from './components/Contactus'
 import Footer from './components/Footer'
 import { Routes, Route } from 'react-router-dom'
 import Aboutus from './pages/Aboutus.jsx'

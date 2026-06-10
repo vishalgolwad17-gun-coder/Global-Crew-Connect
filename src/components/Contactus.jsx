@@ -86,7 +86,7 @@ export default function Contact() {
                       Working Hours
                     </h4>
 
-                    <p>Mon - Sat : 9:00 AM - 6:00 PM</p>
+                    <p>24 / 7 Available</p>
                   </div>
                 </div>
 

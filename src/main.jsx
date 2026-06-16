@@ -7,10 +7,12 @@ import Navbar from './components/Navbar.jsx'
 import { Analytics } from '@vercel/analytics/react';
 
 createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
-    <Navbar >
-    <App />
-    <Analytics />
-    </Navbar>
-  </BrowserRouter>
+  <StrictMode>
+    <BrowserRouter>
+      <Navbar>
+        <App />
+      </Navbar>
+      <Analytics />
+    </BrowserRouter>
+  </StrictMode>
 )

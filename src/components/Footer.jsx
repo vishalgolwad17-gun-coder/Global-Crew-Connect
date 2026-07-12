@@ -1,5 +1,6 @@
-import { Phone, Mail } from "lucide-react";
+
 import { Link } from "react-router-dom";
+import "remixicon/fonts/remixicon.css";
 
 export default function Footer() {
   return (
@@ -101,24 +102,30 @@ export default function Footer() {
 
             <div className="flex gap-4">
   <a
-    href="#"
-    className="bg-yellow-400 text-black px-4 py-2 rounded-lg font-medium hover:bg-yellow-300 transition"
+    href="https://www.facebook.com/profile.php?id=61591241608224"
+    className="bg-yellow-400 text-black px-4 py-2 rounded-lg font-medium hover:bg-yellow-300 transition text-xl"
   >
-    Facebook
+   <i class="ri-facebook-circle-fill"></i>
   </a>
 
   <a
-    href="#"
-    className="bg-yellow-400 text-black px-4 py-2 rounded-lg font-medium hover:bg-yellow-300 transition"
+    href="https://www.instagram.com/globalcrewconnect/"
+    className="bg-yellow-400 text-black px-4 py-2 rounded-lg font-medium hover:bg-yellow-300 transition text-xl"
   >
-    Instagram
+   <i class="ri-instagram-line"></i>
   </a>
 
   <a
-    href="#"
-    className="bg-yellow-400 text-black px-4 py-2 rounded-lg font-medium hover:bg-yellow-300 transition"
+    href="https://www.linkedin.com/company/Globalcrewconnect"
+    className="bg-yellow-400 text-black px-4 py-2 rounded-lg font-medium hover:bg-yellow-300 transition text-xl"
   >
-    LinkedIn
+    <i class="ri-linkedin-fill"></i>
+  </a>
+  <a
+    href="https://x.com/GlobalCrewCo"
+    className="bg-yellow-400 text-black px-4 py-2 rounded-lg font-medium hover:bg-yellow-300 transition text-xl"
+  >
+    <i class="ri-twitter-x-line"></i>
   </a>
 </div>
           </div>

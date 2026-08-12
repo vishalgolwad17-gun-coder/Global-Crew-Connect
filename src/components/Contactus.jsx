@@ -62,7 +62,7 @@ export default function Contact() {
                       Email Address
                     </h4>
 
-                    <p>crewconnectglobal@gmail.com</p>
+                    <p>info@globalcrewconnect.org</p>
                   </div>
                 </div>
 

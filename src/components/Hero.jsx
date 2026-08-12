@@ -162,7 +162,7 @@ export default function Hero() {
 
   <p className="flex items-center gap-2 text-black text-sm sm:text-base break-all text-center sm:text-left">
     <Mail size={18} className="text-yellow-400 flex-shrink-0" />
-    crewconnectglobal@gmail.com
+    info@globalcrewconnect.org
   </p>
 </div>
 

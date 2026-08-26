@@ -181,121 +181,8 @@ export default function About() {
 
         </div>
       </section>
-
-      {/* OUR TEAM */}
-<section className="py-24 bg-[#08142c] text-white relative overflow-hidden">
-  <div className="absolute top-0 right-0 w-96 h-96 bg-yellow-400/10 rounded-full blur-3xl"></div>
-  <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
-
-  <div className="max-w-7xl mx-auto px-6 relative z-10">
-
-    <div className="text-center mb-16">
-      <span className="text-yellow-400 font-semibold uppercase tracking-wider">
-        Our Team
-      </span>
-
-      <h2 className="text-5xl font-bold mt-4">
-        Meet The Leadership Team
-      </h2>
-
-      <p className="text-gray-300 mt-6 max-w-3xl mx-auto">
-        Behind every successful placement is a dedicated team
-        committed to helping candidates achieve their international
-        career goals.
-      </p>
-    </div>
-
-    <div className="grid md:grid-cols-3 gap-8">
-
-      {/* Founder */}
-      <div className="group bg-[#102447] rounded-3xl overflow-hidden border border-white/10 hover:border-yellow-400/30 transition">
-
-        <div className="overflow-hidden">
-          <img
-            src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=1200&q=80"
-            alt="Founder"
-            className="h-96 w-full object-cover group-hover:scale-105 transition duration-500"
-          />
-        </div>
-
-        <div className="p-8 text-center">
-          <span className="text-yellow-400 font-semibold uppercase text-sm tracking-wider">
-            Founder
-          </span>
-
-          <h3 className="text-2xl font-bold mt-3">
-    David Thompson
-  </h3>
-
-          <p className="text-gray-300 mt-4">
-            Leading the vision of connecting talent with
-            global opportunities.
-          </p>
-        </div>
-      </div>
-
-      {/* Co-Founder */}
-      <div className="group bg-[#102447] rounded-3xl overflow-hidden border border-white/10 hover:border-yellow-400/30 transition">
-
-        <div className="overflow-hidden">
-          <img
-            src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1200&q=80"
-            alt="Co-Founder"
-            className="h-96 w-full object-cover group-hover:scale-105 transition duration-500"
-          />
-        </div>
-
-        <div className="p-8 text-center">
-          <span className="text-yellow-400 font-semibold uppercase text-sm tracking-wider">
-            Co-Founder
-          </span>
-
-          <h3 className="text-2xl font-bold mt-3">
-    Sarah Mitchell
-  </h3>
-
-          <p className="text-gray-300 mt-4">
-            Managing recruitment operations and ensuring a
-            seamless placement process.
-          </p>
-        </div>
-      </div>
-
-
-      {/* CEO */}
-      <div className="group bg-[#102447] rounded-3xl overflow-hidden border border-white/10 hover:border-yellow-400/30 transition">
-
-        <div className="overflow-hidden">
-          <img
-            src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=1200&q=80"
-            alt="CEO"
-            className="h-96 w-full object-cover group-hover:scale-105 transition duration-500"
-          />
-        </div>
-
-        <div className="p-8 text-center">
-          <span className="text-yellow-400 font-semibold uppercase text-sm tracking-wider">
-            Co-Founder
-          </span>
-
-           <h3 className="text-2xl font-bold mt-3">
-    Michael Anderson
-  </h3>
-
-          <p className="text-gray-300 mt-4">
-            Driving international partnerships and creating
-            opportunities for overseas careers.
-          </p>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
 {/* COUNTRIES WE SERVE */}
-<section className="py-24 bg-gray-50">
+<section className="py-24 bg-[#102447]">
   <div className="max-w-7xl mx-auto px-6">
 
     <div className="text-center mb-16">
@@ -303,11 +190,11 @@ export default function About() {
         Global Reach
       </span>
 
-      <h2 className="text-5xl font-bold mt-4">
+      <h2 className="text-5xl font-bold mt-4 text-white">
         Countries We Serve
       </h2>
 
-      <p className="text-gray-600 mt-6 max-w-3xl mx-auto">
+      <p className="text-white mt-6 max-w-3xl mx-auto">
         Connecting candidates with trusted employers across
         leading international destinations.
       </p>
@@ -399,15 +286,15 @@ image:
 </section>
 
       {/* CTA */}
-      <section className="bg-[#08142c] py-24 text-center text-white">
+      <section className="bg-gray-50 py-24 text-center text-white">
         <div className="max-w-4xl mx-auto px-6">
 
-          <h2 className="text-5xl font-bold">
+          <h2 className="text-5xl font-bold text-black">
             Ready To Start Your
             International Career?
           </h2>
 
-          <p className="mt-6 text-gray-300">
+          <p className="mt-6 text-black">
             Contact Global Crew Connect today and
             explore overseas opportunities.
           </p>

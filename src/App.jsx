@@ -1,11 +1,11 @@
 import React from 'react'
 import Hero from './components/Hero'
-
 import Services from './components/Services'
 import Jobs from './components/Jobs'
 import Countries from './components/Countries'
 import Whychooseus from './components/Whychooseus'
 import Contactus from './components/Contactus'
+import Blogs from './components/Blogs'
 import Footer from './components/Footer'
 import { Routes, Route } from 'react-router-dom'
 import Aboutus from './pages/Aboutus.jsx'
@@ -21,6 +21,7 @@ const App = () => {
         <Route path="/countries" element={<Countries />} />
         <Route path="/whychooseus" element={<Whychooseus />} />
         <Route path="/contact" element={<Contactus />} />
+        <Route path="/blogs" element={<Blogs />} />
         <Route path="/footer" element={<Footer />} />
       </Routes>
     </div>

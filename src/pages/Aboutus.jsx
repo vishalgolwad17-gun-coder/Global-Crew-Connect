@@ -323,7 +323,7 @@ export default function About() {
             tabIndex={-1}
           >
             <source
-              src="https://videos.pexels.com/video-files/37824568/16044314_1920_1080_60fps.mp4"
+              src="meetingvideo.mp4"
               type="video/mp4"
             />
           </video>

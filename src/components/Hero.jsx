@@ -287,7 +287,7 @@ export default function Hero() {
           tabIndex={-1}
         >
           <source
-            src="https://www.pexels.com/download/video/36255198/"
+            src="/planevideo.mp4"
             type="video/mp4"
           />
         </video>

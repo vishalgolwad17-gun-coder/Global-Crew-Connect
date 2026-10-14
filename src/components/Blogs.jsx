@@ -22,7 +22,7 @@ gsap.registerPlugin(ScrollTrigger, useGSAP);
 const BLOG_HERO_POSTER =
   "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=2200&q=85";
 const BLOG_HERO_VIDEO =
-  "https://www.pexels.com/download/video/7981259/";
+  "blogsvideo.mp4";
 
 const BLOG_POSTS = [
   {

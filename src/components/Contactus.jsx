@@ -25,7 +25,7 @@ gsap.registerPlugin(ScrollTrigger, useGSAP);
 const HERO_POSTER =
   "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=2200&q=85";
 
-const HERO_VIDEO = "https://www.pexels.com/download/video/8865638/";
+const HERO_VIDEO = "contactusvideo.mp4";
 
 const CONTACT_DETAILS = [
   {

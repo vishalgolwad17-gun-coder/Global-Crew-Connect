@@ -23,7 +23,7 @@ const HERO_POSTER =
 
 // Pexels stock video: an office team collaborating in a conference room.
 const HERO_VIDEO =
-  "https://videos.pexels.com/video-files/7989454/7989454-hd_1920_1080_25fps.mp4";
+  "servicesvideo.mp4";
 
 const SERVICES = [
   {

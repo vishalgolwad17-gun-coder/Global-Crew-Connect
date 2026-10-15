@@ -155,6 +155,7 @@ function ContactItem({ icon: Icon, label, value, href, email = false }) {
 
 export default function Hero() {
   const pageRef = useRef(null);
+  const videoRef = useRef(null);
   const [reduceMotion, setReduceMotion] = useState(() => {
     if (typeof window === "undefined") return false;
     return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -170,6 +171,52 @@ export default function Hero() {
     motionQuery.addEventListener("change", updateMotionPreference);
     return () => motionQuery.removeEventListener("change", updateMotionPreference);
   }, []);
+
+  // Retry muted inline playback once the video is ready. Some mobile browsers
+  // ignore the autoplay attribute until media data is available. If playback
+  // is blocked (for example, by Low Power Mode or browser policy), the poster
+  // image remains visible as a graceful fallback.
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return undefined;
+
+    if (reduceMotion) {
+      video.pause();
+      return undefined;
+    }
+
+    let cancelled = false;
+
+    const tryPlay = () => {
+      if (cancelled) return;
+
+      video.muted = true;
+      video.defaultMuted = true;
+      video.playsInline = true;
+
+      const playAttempt = video.play();
+      if (playAttempt && typeof playAttempt.catch === "function") {
+        playAttempt.catch((error) => {
+          // Autoplay can be blocked by device/browser settings; keep the poster.
+          console.info(
+            "Hero background video autoplay unavailable; displaying poster instead.",
+            error?.name || error
+          );
+        });
+      }
+    };
+
+    if (video.readyState >= 2) {
+      tryPlay();
+    } else {
+      video.addEventListener("canplay", tryPlay, { once: true });
+    }
+
+    return () => {
+      cancelled = true;
+      video.removeEventListener("canplay", tryPlay);
+    };
+  }, [reduceMotion]);
 
   useGSAP(
     () => {
@@ -276,6 +323,7 @@ export default function Hero() {
           className="pointer-events-none absolute inset-0 h-full w-full object-cover object-center"
         />
         <video
+          ref={videoRef}
           className="pointer-events-none absolute inset-0 h-full w-full object-cover object-center"
           autoPlay={!reduceMotion}
           loop

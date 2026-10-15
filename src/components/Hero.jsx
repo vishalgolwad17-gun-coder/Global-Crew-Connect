@@ -287,7 +287,7 @@ export default function Hero() {
           tabIndex={-1}
         >
           <source
-            src="/planevideo.mp4"
+            src="/newplanevideo.mp4"
             type="video/mp4"
           />
         </video>

@@ -47,24 +47,24 @@ export default function WhyChooseUs() {
   return (
     <section
       id="why-choose-us"
-      classNameName="py-24 bg-[#08142c] text-white"
+      className="py-24 bg-[#08142c] text-white"
     >
-      <div classNameName="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6">
 
         {/* Heading */}
-        <div classNameName="text-center mb-20">
-          <span classNameName="text-yellow-400 uppercase tracking-widest font-medium">
+        <div className="text-center mb-20">
+          <span className="text-yellow-400 uppercase tracking-widest font-medium">
             Why Choose Us
           </span>
 
-          <h2 classNameName="text-4xl md:text-5xl font-bold mt-4">
+          <h2 className="text-4xl md:text-5xl font-bold mt-4">
             Trusted Partner For
-            <span classNameName="text-yellow-400">
+            <span className="text-yellow-400">
               {" "}International Careers
             </span>
           </h2>
 
-          <p classNameName="text-gray-300 mt-6 max-w-3xl mx-auto">
+          <p className="text-gray-300 mt-6 max-w-3xl mx-auto">
             Global Crew Connect helps skilled and unskilled workers
             secure overseas employment opportunities through
             trusted employers, expert guidance and end-to-end support.
@@ -72,14 +72,14 @@ export default function WhyChooseUs() {
         </div>
 
         {/* Hero Block */}
-        <div classNameName="grid lg:grid-cols-2 gap-16 items-center mb-24">
+        <div className="grid lg:grid-cols-2 gap-16 items-center mb-24">
 
           {/* Left Image */}
-          <div classNameName="relative">
+          <div className="relative">
             <img
               src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1200&q=80"
               alt="Global Recruitment"
-              classNameName="rounded-3xl shadow-2xl"
+              className="rounded-3xl shadow-2xl"
             />
 
             
@@ -87,11 +87,11 @@ export default function WhyChooseUs() {
 
           {/* Content */}
           <div>
-            <h3 classNameName="text-4xl font-bold mb-6">
+            <h3 className="text-4xl font-bold mb-6">
               Building Better Futures Through Global Opportunities
             </h3>
 
-            <p classNameName="text-gray-300 leading-relaxed mb-8">
+            <p className="text-gray-300 leading-relaxed mb-8">
               We specialize in connecting job seekers with
               international employers across Saudi Arabia,
               UAE, Dubai and Australia. Our mission is to
@@ -99,24 +99,24 @@ export default function WhyChooseUs() {
               help candidates build successful careers abroad.
             </p>
 
-            <ul classNameName="space-y-4">
-              <li classNameName="flex items-center gap-3">
+            <ul className="space-y-4">
+              <li className="flex items-center gap-3">
                 ✅ Verified International Employers
               </li>
 
-              <li classNameName="flex items-center gap-3">
+              <li className="flex items-center gap-3">
                 ✅ Multiple Overseas Destinations
               </li>
 
-              <li classNameName="flex items-center gap-3">
+              <li className="flex items-center gap-3">
                 ✅ Skilled & Unskilled Job Opportunities
               </li>
 
-              <li classNameName="flex items-center gap-3">
+              <li className="flex items-center gap-3">
                 ✅ Complete Documentation Support
               </li>
 
-              <li classNameName="flex items-center gap-3">
+              <li className="flex items-center gap-3">
                 ✅ Transparent Recruitment Process
               </li>
             </ul>
@@ -124,27 +124,27 @@ export default function WhyChooseUs() {
         </div>
 
         {/* Feature Cards */}
-        <div classNameName="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
           {features.map((feature, index) => (
             <div
               key={index}
-              classNameName="bg-white text-black rounded-3xl overflow-hidden shadow-xl hover:-translate-y-2 transition duration-300"
+              className="bg-white text-black rounded-3xl overflow-hidden shadow-xl hover:-translate-y-2 transition duration-300"
             >
-              <div classNameName="overflow-hidden">
+              <div className="overflow-hidden">
                 <img
                   src={feature.image}
                   alt={feature.title}
-                  classNameName="h-60 w-full object-cover hover:scale-110 transition duration-700"
+                  className="h-60 w-full object-cover hover:scale-110 transition duration-700"
                 />
               </div>
 
-              <div classNameName="p-6">
-                <h3 classNameName="text-2xl font-bold mb-3">
+              <div className="p-6">
+                <h3 className="text-2xl font-bold mb-3">
                   {feature.title}
                 </h3>
 
-                <p classNameName="text-gray-600">
+                <p className="text-gray-600">
                   {feature.description}
                 </p>
               </div>

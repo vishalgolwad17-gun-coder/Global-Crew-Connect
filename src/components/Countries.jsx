@@ -33,56 +33,56 @@ export default function Countries() {
   return (
     <section
       id="countries"
-      classNameName="py-24 bg-[#08142c] text-white"
+      className="py-24 bg-[#08142c] text-white"
     >
-      <div classNameName="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6">
 
         {/* Heading */}
-        <div classNameName="text-center mb-16">
-          <span classNameName="text-yellow-400 uppercase tracking-wider">
+        <div className="text-center mb-16">
+          <span className="text-yellow-400 uppercase tracking-wider">
             Work Abroad
           </span>
 
-          <h2 classNameName="text-5xl font-bold mt-4">
+          <h2 className="text-5xl font-bold mt-4">
             Recruitment Destinations
           </h2>
 
-          <p classNameName="text-gray-300 mt-6 max-w-3xl mx-auto">
+          <p className="text-gray-300 mt-6 max-w-3xl mx-auto">
             Explore exciting overseas employment opportunities
             across some of the world's fastest-growing economies.
           </p>
         </div>
 
         {/* Cards */}
-        <div classNameName="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
 
           {countries.map((country, index) => (
             <div
               key={index}
-              classNameName="group bg-[#102447] rounded-3xl overflow-hidden shadow-xl hover:-translate-y-2 transition duration-300"
+              className="group bg-[#102447] rounded-3xl overflow-hidden shadow-xl hover:-translate-y-2 transition duration-300"
             >
-              <div classNameName="relative overflow-hidden">
+              <div className="relative overflow-hidden">
                 <img
                   src={country.image}
                   alt={country.name}
-                  classNameName="h-56 w-full object-cover group-hover:scale-110 transition duration-700"
+                  className="h-56 w-full object-cover group-hover:scale-110 transition duration-700"
                 />
 
-                <div classNameName="absolute top-4 left-4 bg-white/90 text-black px-3 py-2 rounded-full text-lg font-semibold">
+                <div className="absolute top-4 left-4 bg-white/90 text-black px-3 py-2 rounded-full text-lg font-semibold">
                   {country.flag}
                 </div>
               </div>
 
-              <div classNameName="p-6">
-                <h3 classNameName="text-2xl font-bold mb-3">
+              <div className="p-6">
+                <h3 className="text-2xl font-bold mb-3">
                   {country.name}
                 </h3>
 
-                <p classNameName="text-gray-300 mb-5">
+                <p className="text-gray-300 mb-5">
                   Popular opportunities in:
                 </p>
 
-                <div classNameName="text-yellow-400 font-medium">
+                <div className="text-yellow-400 font-medium">
                   {country.jobs}
                 </div>
 

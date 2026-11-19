@@ -32,7 +32,7 @@ const SOCIAL_LINKS = [
   },
   {
     label: "Instagram",
-    href: "https://www.instagram.com/globalcrewconnect/",
+    href: "https://www.instagram.com/officialglobalcrewconnect/",
     icon: "ri-instagram-line",
   },
   {
